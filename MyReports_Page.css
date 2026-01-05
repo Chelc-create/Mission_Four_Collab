@@ -1,0 +1,141 @@
+.body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  background-color: #060932;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.heading {
+  color: #afccb5;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.menu {
+  font-size: 2rem;
+}
+
+#topContainer {
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 2.5rem 2.5rem 0 0;
+  background: white;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin: 0;
+}
+
+.form-control {
+  border: 1px solid #060932 !important;
+}
+
+#searchInput::placeholder {
+  color: #060932;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* 3. Change color when the user clicks (Focus) */
+#searchInput:focus {
+  border: 1px solid #341bf1 !important;
+  box-shadow: none;
+  outline: none;
+}
+
+#searchInput {
+  color: #060932;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #341bf1;
+}
+
+/* removes the default browser exit search button */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060932;
+  color: white;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn-circle:hover {
+  background-color: #0d124a; /* Slightly lighter shade for hover */
+  transform: scale(1.05); /* Subtle pop effect */
+}
+
+.custom-pills .nav-link {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #b9b8b8;
+  font-weight: 500;
+}
+.custom-pills .nav-link.active {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #afccb5 !important;
+  color: #ffffff;
+}
+
+/* 1. The main container for the tabs */
+.tab-container {
+  background-color: #bdbdbd; /* Light gray background from image */
+  border-radius: 50px; /* Pill shape */
+  padding: 0; /* Remove extra space */
+  overflow: hidden; /* Ensures children don't bleed out of corners */
+  display: inline-flex; /* Keeps the bar only as wide as its content */
+  width: 100%; /* Or set a max-width like 40rem to match search */
+}
+
+/* 2. Style individual tab links */
+.tab-container .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0; /* Vertical padding */
+  flex: 1; /* Makes both tabs equal width */
+  border-radius: 0; /* Remove individual pill shape */
+  transition: background-color 0.3s;
+}
+
+/* 3. The Active State (Sage Green) */
+.tab-container .nav-link.active {
+  background-color: #afccb5 !important; /* Sage green from your buttons */
+  color: #ffffff !important;
+  border-radius: 50px; /* Gives the active tab rounded ends */
+}
+
+/* 4. Hover state for the inactive tab */
+.tab-container .nav-link:not(.active):hover {
+  background-color: #adadad;
+}

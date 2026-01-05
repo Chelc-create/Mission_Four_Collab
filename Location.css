@@ -1,0 +1,189 @@
+.body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  color: #afccb5;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #060932;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.heading {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: #afccb5;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.menu {
+  font-size: 2rem;
+}
+
+#topContainer {
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 2.5rem 2.5rem 0 0;
+  background: white;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin: 0;
+}
+
+.progress {
+  background-color: #dadada;
+  width: 20.5rem;
+}
+
+.progress-bar {
+  background-color: #341bf1 !important;
+}
+
+.icon {
+  color: #060932;
+  font-size: 2rem;
+}
+
+.prompt {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: #060932;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#enterLocation {
+  box-sizing: border-box;
+  border: 0.0625rem solid #060932;
+  background-color: #f7f5f5;
+  height: 3.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#enterLocation::placeholder {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #060932;
+}
+
+#OR {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #060932;
+}
+
+/* current location button */
+#find-me {
+  background-color: #341bf1 !important;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+span {
+  margin-right: 0.5rem;
+  align-content: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#location-icon {
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+#location {
+  color: #060932;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+#home {
+  color: #060932;
+  background-color: #afccb5;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+  height: 4rem;
+  padding-right: 2rem;
+}
+
+#continue {
+  background-color: #060932;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  height: 4rem;
+}
+
+.actions.fixed-bottom {
+  pointer-events: none; /* Allows clicking through empty space to the map */
+  border: none;
+}
+
+#home,
+#continue {
+  pointer-events: auto; /* Re-enables clicking on the buttons themselves */
+  position: absolute;
+  bottom: 60px; /* Adjust height from bottom */
+  width: 42%;
+  max-width: 160px; /* Fixed width to ensure shape consistency */
+  height: 80px; /* Taller buttons look better as semi-circles */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+#home {
+  left: 0;
+  /* Rounds only the top-right and bottom-right corners */
+  border-radius: 0 50px 50px 0;
+  text-align: right;
+  padding-right: 1.5rem;
+  justify-content: flex-end;
+}
+
+#continue {
+  right: 0;
+  /* Rounds only the top-left and bottom-left corners */
+  border-radius: 50px 0 0 50px;
+  text-align: left;
+  padding-left: 1.5rem;
+  justify-content: flex-start;
+}
+
+@media (max-width: 350px) {
+  #find-me span,
+  #home span,
+  #continue span {
+    font-size: 0.8rem;
+  }
+}
