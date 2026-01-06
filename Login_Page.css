@@ -31,6 +31,10 @@ html,
   font-weight: 700;
 }
 
+.col-auto {
+  font-family: Inter;
+}
+
 .col,
 .form-label,
 #logIn {
