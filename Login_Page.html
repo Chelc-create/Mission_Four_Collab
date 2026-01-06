@@ -28,14 +28,57 @@
   <body class="body min-dvh-100 d-flex flex-column">
     <!-- HEADING -->
     <header class="grid-container">
-      <h1
-        class="heading container-fluid text-start mt-5 pt-5 pb-3"
+      <div
+        class="container-fluid mt-5 pt-5 pb-3"
         style="max-width: 40rem; width: 80%"
       >
-        FixIt
-      </h1>
-      <!-- !!ADD LANGUAGE MENU!! -->
+        <div class="row align-items-center">
+          <div class="col">
+            <h1 class="heading text-start mb-0" style="color: #060932">
+              FixIt
+            </h1>
+          </div>
+          <!-- LANGUAGE MENU -->
+          <div class="col-auto">
+            <div class="dropdown">
+              <button
+                class="btn btn-light rounded-3 d-flex align-items-center gap-2 border-0 px-3 py-1 shadow-sm"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: #060932"
+              >
+                <img
+                  src="https://flagcdn.com/w40/nz.png"
+                  alt="NZ Flag"
+                  style="width: 20px; height: 20px; border-radius: 20px"
+                />
+                <span class="fw-bold small">English (NZ)</span>
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+
+              <ul
+                class="dropdown-menu dropdown-menu-end rounded-3 shadow border-0 mt-2"
+              >
+                <li>
+                  <a class="dropdown-item small fw-bold" href="#"
+                    >English (NZ)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item small fw-bold" href="#">Māori</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item small" href="#">Other Languages...</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
     <!-- MAIN SECTION -->
     <main id="topContainer" class="d-flex justify-content-center flex-grow-1">
       <section class="card border-0 mt-3" style="max-width: 40rem; width: 80%">
@@ -102,7 +145,7 @@
             />
             <!-- show password -->
             <i
-              class="fa-solid fa-eye position-absolute end-0 top-50 translate-middle-y me-3 mt-3"
+              class="fa-solid fa-eye-slash position-absolute end-0 top-50 translate-middle-y me-3 mt-3"
               id="togglePassword"
               style="cursor: pointer; color: #060932"
             ></i>
