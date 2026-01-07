@@ -67,6 +67,7 @@ html {
   font-style: normal;
 }
 
+/* input text */
 #enterLocation {
   box-sizing: border-box;
   border: 0.0625rem solid #060932;
@@ -74,8 +75,10 @@ html {
   height: 3.5rem;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-items: center;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #060932;
 }
 
 #enterLocation::placeholder {
@@ -83,6 +86,12 @@ html {
   font-size: 1rem;
   font-weight: 500;
   color: #060932;
+}
+
+#enterLocation:focus {
+  border: 2px solid #341bf1 !important;
+  box-shadow: none;
+  outline: none;
 }
 
 #OR {
@@ -153,10 +162,10 @@ span {
 #continue {
   pointer-events: auto; /* Re-enables clicking on the buttons themselves */
   position: absolute;
-  bottom: 60px; /* Adjust height from bottom */
+  bottom: 60px; /* height from bottom */
   width: 42%;
-  max-width: 160px; /* Fixed width to ensure shape consistency */
-  height: 80px; /* Taller buttons look better as semi-circles */
+  max-width: 160px;
+  height: 80px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
