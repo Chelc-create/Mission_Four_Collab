@@ -50,9 +50,9 @@ html {
   font-weight: 500;
 }
 
-/* 3. Change color when the user clicks (Focus) */
+/* search bar clicked state */
 #searchInput:focus {
-  border: 1px solid #341bf1 !important;
+  border: 2px solid #341bf1 !important;
   box-shadow: none;
   outline: none;
 }
@@ -65,7 +65,7 @@ html {
   border: 1px solid #341bf1;
 }
 
-/* removes the default browser exit icon (when input typed into  */
+/* removes the default browser exit icon (when input text typed in)  */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
